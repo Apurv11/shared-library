@@ -7,7 +7,7 @@ pipelineJob('npm-dsl-job-1') {
     }
 }
 
-pipelineJob('npm-dsl-job-1') {
+pipelineJob('npm-dsl-job-2') {
     definition {
         cps {
             script(readFileFromWorkspace('npm2.groovy'))
