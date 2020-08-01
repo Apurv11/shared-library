@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('cloning repo ... ') {
             steps {
-                git 'https://github.com/Apurv11/test-jenkins.git.git'
+                git 'https://github.com/Apurv11/test-jenkins.git'
             }
         }
         stage('Build') {
