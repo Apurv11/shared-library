@@ -17,6 +17,7 @@ pipeline {
         }
         stage('Build') {
             steps {
+                sh 'echo "New"'
                 sh 'npm install'
                 sh 'sleep 10000'
             }
