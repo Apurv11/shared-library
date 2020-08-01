@@ -10,16 +10,10 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('cloning repo ... ') {
-            steps {
-                git 'https://github.com/Apurv11/test-jenkins.git'
-            }
-        }
+        
         stage('Build') {
             steps {
                 sh 'echo "New"'
-                sh 'npm install'
-                sh 'sleep 10000'
             }
         }
         stage('Test') {
