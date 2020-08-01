@@ -18,6 +18,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
+                sh 'sleep 10000'
             }
         }
         stage('Test') {
