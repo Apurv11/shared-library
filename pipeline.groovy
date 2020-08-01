@@ -10,6 +10,11 @@ pipeline {
         CI = 'true'
     }
     stages {
+        stage('cloning repo ... ') {
+            steps {
+                git 'https://github.com/Apurv11/sampleapp2.git'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
