@@ -1,7 +1,16 @@
-pipelineJob('python_dsl_job_example') {
+pipelineJob('npm-dsl-job-1') {
     definition {
         cps {
-            script(readFileFromWorkspace('pipeline.groovy'))
+            script(readFileFromWorkspace('npm1.groovy'))
+            sandbox()
+        }
+    }
+}
+
+pipelineJob('npm-dsl-job-1') {
+    definition {
+        cps {
+            script(readFileFromWorkspace('npm2.groovy'))
             sandbox()
         }
     }
